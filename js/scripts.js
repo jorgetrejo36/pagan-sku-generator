@@ -5,19 +5,19 @@ $(document).ready(function() {
                   text: "Mens"
                 },
                 {
-                  id: 'WMN',
+                  id: 'WN',
                   text: "Womens"
                 },
                 {
-                  id: 'BYS',
+                  id: 'BY',
                   text: "Boys"
                 },
                 {
-                  id: 'GRL',
+                  id: 'GL',
                   text: "Girls"
                 },
                 {
-                  id: 'USX',
+                  id: 'US',
                   text: "Unisex"
                 }];
   var style = [ {
@@ -27,13 +27,13 @@ $(document).ready(function() {
                   id: 'LS',
                   text: "Long Sleeves"},
                 {
-                  id: 'SW',
+                  id: 'SR',
                   text: "Sweaters"},
                 {
                   id: 'JK',
                   text: "Jackets"},
                 {
-                  id: 'COA',
+                  id: 'CO',
                   text: "Coats"},
                 {
                   id: 'CD',
@@ -42,10 +42,10 @@ $(document).ready(function() {
                   id: 'CT',
                   text: "Crop Tops"},
                 {
-                  id: 'SLT',
+                  id: 'ST',
                   text: "Sleeveless Tops"},
                 {
-                  id: 'VST',
+                  id: 'VT',
                   text: "Vests"},
                 {
                   id: 'BZ',
@@ -54,79 +54,79 @@ $(document).ready(function() {
                   id: 'SK',
                   text: "Skirts"},
                 {
-                  id: 'PDR',
+                  id: 'DP',
                   text: "Dress Pants"},
                 {
-                  id: 'PK',
+                  id: 'KH',
                   text: "Khakis"},
                 {
-                  id: 'PJ',
+                  id: 'JN',
                   text: "Jeans"},
                 {
-                  id: 'PCR',
+                  id: 'CR',
                   text: "Corduory Pants"},
                 {
-                  id: 'PTR',
+                  id: 'TP',
                   text: "Track Pants"},
                 {
-                  id: 'PCGS',
+                  id: 'CG',
                   text: "Cargos"},
                 {
-                  id: 'PSW',
+                  id: 'SW',
                   text: "Sweats"},
                 {
-                  id: 'PS',
+                  id: 'SH',
                   text: "Shorts"},
                 {
-                  id: 'PCP',
+                  id: 'CP',
                   text: "Casual Pants"},
                 {
-                  id: 'PBB',
+                  id: 'BB',
                   text: "Bellbottoms"},
                 {
-                  id: 'PHW',
+                  id: 'HW',
                   text: "High-Waisted Pants"},
                 {
-                  id: 'PLR',
+                  id: 'LR',
                   text: "Low-Rise Pants"},
                 {
-                  id: 'JMP',
+                  id: 'JS',
                   text: "Jumpsuits"},
                 {
-                  id: 'OVRS',
+                  id: 'OA',
                   text: "Overalls"},
                 {
-                  id: 'HTS',
+                  id: 'HT',
                   text: "Hats"},
                 {
-                  id: 'SCF',
+                  id: 'SF',
                   text: "Scarves"},
                 {
                   id: 'HB',
                   text: "Handbags"},
                 {
-                  id: 'PUR',
+                  id: 'PR',
                   text: "Purses"},
                 {
-                  id: 'BPS',
+                  id: 'BP',
                   text: "Backpacks"},
                 {
-                  id: 'SUN',
+                  id: 'SN',
                   text: "Sunglasses"},
                 {
-                  id: 'RGS',
+                  id: 'RG',
                   text: "Rings"},
                 {
-                  id: 'NCK',
+                  id: 'NK',
                   text: "Necklaces"},
                 {
-                  id: 'EAR',
+                  id: 'ER',
                   text: "Earrings"},
                 {
-                  id: 'WTCH',
+                  id: 'WT',
                   text: "Watches"},
                 {
-                  id: 'BRCS',
+                  id: 'BR',
                   text: "Bracelets"}
               ];
   var color = [ {
@@ -139,7 +139,7 @@ $(document).ready(function() {
                   id: 'GRY',
                   text: "Grey"},
                 {
-                  id: 'BRWN',
+                  id: 'BWN',
                   text: "Brown"},
                 {
                   id: 'RD',
@@ -151,7 +151,7 @@ $(document).ready(function() {
                   id: 'PNK',
                   text: "Pink"},
                 {
-                  id: 'PRPL',
+                  id: 'PRL',
                   text: "Purple"},
                 {
                   id: 'YLW',
@@ -163,16 +163,16 @@ $(document).ready(function() {
                   id: 'BLU',
                   text: "Blue"},
                 {
-                  id: 'MULT',
+                  id: 'MLT',
                   text: "Multicolor"},
                 {
-                  id: 'LBLU',
+                  id: 'LBL',
                   text: "Light Blue"},
                 {
-                  id: 'DBLU',
+                  id: 'DBL',
                   text: "Dark Blue"},
                 {
-                  id: 'WBLU',
+                  id: 'WBL',
                   text: "Washed Blue"},
                 {
                   id: 'CRM',
@@ -187,7 +187,7 @@ $(document).ready(function() {
                   id: 'GLD',
                   text: "Gold"},
                 {
-                  id: 'SLVR',
+                  id: 'SVR',
                   text: "Silver"},
                 {
                   id: 'PRL',
@@ -209,7 +209,7 @@ $(document).ready(function() {
                 id: 'XL',
                 text: "XL"},
               {
-                id: 'XXL',
+                id: '2X',
                 text: "XXL"}
             ];
 
@@ -246,7 +246,7 @@ function generateSKU() {
 
   var title = title.split(/\s/).reduce((response,word)=> response+=word.slice(0,1),'')
 
-  while (title.length > 4) {
+  while (title.length > 3) {
     title = title.slice(0, -1);
   }
 
